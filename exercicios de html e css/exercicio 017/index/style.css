@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+h1{
+    color: rgb(203, 164, 240);
+}
+h2 {
+    color: rgb(216, 191, 240);
+}
+h1#XD {
+    color: brown;
+}
+h2.b{
+    color: chartreuse;
+}
+h2.c {
+    background-color: blue;
+} 
+h
