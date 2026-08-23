@@ -1,56 +1,73 @@
 @charset "UTF-8";
+
+/* Reset básico */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Evita problemas de cálculo de largura/altura */
 }
+
+/* Estrutura base */
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Cabeçalho */
 header {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 50px 20px 20px; /* Espaçamento superior e lateral */
 }
 
 header > h1 {
-    padding-top: 50px;
     text-transform: uppercase;
+    font-size: 2rem;
 }
 
+/* Links */
 a {
     color: white;
     text-decoration: none;
-    font-weight: bolder;
-    }
+    font-weight: bold;
+    transition: text-decoration 0.3s ease;
+}
 
-    a:hover {
-        text-decoration: underline;
-    }
+a:hover {
+    text-decoration: underline;
+}
 
-    footer {
-        background-color: black;
-        color:white;
-        text-align: center;
-        padding: 10px;
-    }
-    section.normal {
-        background-color: white;
-        color: black;
-    }
-    section.imagem {
-        background-color: rgb(25, 32, 32);
-        color: whitesmoke;
-    }
-    section {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-        line-height: 2em;
-        padding-left: 30px;
-    }
+/* Rodapé */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 
-    section.imagem > p {
-        width: 400px;
-        background-color: rgba(0, 0, 0, 0.26);
-    }
+/* Seções */
+section {
+    padding: 10vh 30px;
+    line-height: 2em;
+}
+
+/* Seção normal */
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+/* Seção com imagem ou fundo escuro */
+section.imagem {
+    background-color: rgb(25, 32, 32);
+    color: whitesmoke;
+}
+
+section.imagem > p {
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 10px;
+    border-radius: 5px;
+}
