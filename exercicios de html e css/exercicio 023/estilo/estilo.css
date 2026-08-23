@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
+:root {
+    --fonte-primaria: calibri;
+    --fonte-secundaria: arial;
+    --fonte-terciaria: verdana;
+}
 /* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +14,16 @@
 }
 
 /* Estrutura base */
+
 html, body {
     min-height: 100vh;
     background-color: darkgray;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 /* Cabeçalho */
+
 header {
     background-color: black;
     color: white;
@@ -25,9 +34,12 @@ header {
 header > h1 {
     text-transform: uppercase;
     font-size: 2rem;
+    font-family: var(--fonte-secundaria);
+    font-size: 12vw;
 }
 
 /* Links */
+
 a {
     color: white;
     text-decoration: none;
@@ -40,6 +52,7 @@ a:hover {
 }
 
 /* Rodapé */
+
 footer {
     background-color: black;
     color: white;
@@ -48,12 +61,14 @@ footer {
 }
 
 /* Seções */
+
 section {
     padding: 10vh 30px;
     line-height: 2em;
 }
 
 /* Seção normal */
+
 section.normal {
     background-color: white;
     color: black;
@@ -70,4 +85,5 @@ section.imagem > p {
     background-color: rgba(0, 0, 0, 0.26);
     padding: 10px;
     border-radius: 5px;
+    display: inline-block;
 }
