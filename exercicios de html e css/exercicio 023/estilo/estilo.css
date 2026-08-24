@@ -78,7 +78,9 @@ section.normal {
 section.imagem {
     background-color: rgb(25, 32, 32);
     color: whitesmoke;
-}
+    box-shadow: 5px 5px 10px black;
+    background-attachment: fixed;
+    }
 
 section.imagem > p {
     max-width: 400px;
@@ -86,4 +88,16 @@ section.imagem > p {
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
+    text-shadow: 1.5px 1.4px 1.8px pink;
 }
+section > p {
+    padding-bottom: 1em
+    }
+    section#imagem1 {
+        background-image: url("../imagens/background001.jpg");
+        background-size: cover;
+    }
+    section#imagem2 {
+        background-image: url("../imagens/background002.jpg");
+        background-size: cover;
+    }
